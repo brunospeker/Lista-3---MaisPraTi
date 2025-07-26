@@ -1,0 +1,136 @@
+/*Exercicio 4 - Lista 3*/
+body{
+    margin: 9;
+    border: 0;
+    background-color: maroon;
+}
+
+header{
+    background-color: #007de3;
+    color: #fe8c68;
+    padding: 2rem;
+    margin: 1rem;
+    border: 1px solid #EFBF04;
+    border-radius: 12px;
+}
+
+main{
+    background-color: #007de3;
+    color: #fe8c68;
+    padding: 2rem;
+    margin: 1rem;
+    border: 1px solid #fe8c68;
+    border-radius: 12px;
+}
+
+footer{
+    background-color: #007de3;
+    color: #fe8c68;
+    padding: 2rem;
+    margin: 1rem;
+    border: 1px solid #fe8c68;
+    border-radius: 12px;
+}
+
+/*Exercicio 5 - Lista 3*/
+
+h2{
+    font-size: 29px;
+    text-decoration: underline;
+}
+
+.destaque{
+    font-style: italic;
+    background-color: #225a9b;
+}
+
+#importante{
+    border-top: 15px solid #2f7cbb;
+}
+
+/*Exercicio 6 - Lista 3*/
+
+#container{
+    display: flex;
+    justify-content: center;
+    background-color: #007de3;
+    color: #fe8c68;
+    padding: 2rem;
+    margin: 1rem;
+    border: 1px solid #fe8c68;
+    border-radius: 12px;
+}
+
+#galeria{
+    display: grid;
+    grid-template-columns:2fr 2fr 2fr 2fr;
+}
+
+figure {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+/*Exercicio 7 - Lista 3*/
+#hamburger{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 60px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 19;
+    display: none;
+}
+
+#nav-links{
+    position: fixed;
+    margin: 0;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #2d428a;
+    list-style: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 9;
+    display: none;
+}
+
+#nav-links li{
+    width: 100%;
+    text-align: center;
+}
+
+#nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+@media (max-width: 900px) {
+    #galeria { /*Exercicio 6*/
+        grid-template-columns: 2fr 2fr;
+    }
+}
+
+@media (max-width: 600px) {
+    #galeria { /*Exercicio 6*/
+        grid-template-columns: 1fr;
+    }
+    
+    #hamburger {
+        display: block;
+    }
+
+    #nav-links.ativo {
+        display: flex;
+    }
+}
